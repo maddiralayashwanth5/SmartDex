@@ -1,6 +1,17 @@
 "use client";
 
 import { useState } from "react";
+
+// Generate static params for the dynamic route
+export function generateStaticParams() {
+  // Return some sample deck IDs for static generation
+  return [
+    { id: '1' },
+    { id: '2' },
+    { id: '3' },
+    { id: '4' },
+  ];
+}
 import { motion } from "framer-motion";
 import Link from "next/link";
 import { useParams, useRouter } from "next/navigation";
